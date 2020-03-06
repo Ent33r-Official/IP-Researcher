@@ -22,14 +22,14 @@ from base import up, TOKEN #<= This import required
 
 #Main File
 
-PORT = int(os.environ.get('PORT', '8443'))
+#PORT = int(os.environ.get('PORT', '8443'))
 
 #Working with up
-up.start_webhook(listen="0.0.0.0",
-                      port=PORT,
-                      url_path=TOKEN)
+#up.start_webhook(listen="0.0.0.0",
+ #                     port=PORT,
+ #                     url_path=TOKEN)
 
-print(up.dispatcher.handlers)
-up.bot.set_webhook("https://ipresearcher.herokuapp.com/" + TOKEN)
-#up.start_polling()
+#print(up.dispatcher.handlers)
+#up.bot.set_webhook("https://ipresearcher.herokuapp.com/" + TOKEN)
+up.start_polling()
 up.idle()
