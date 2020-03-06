@@ -19,19 +19,10 @@ import os
 
 #Importing modules from base that you need in your plugin
 from base import up, TOKEN #<= This import required
-from base import importing
+from base.modules import ip
+
 #Main File
 
-#PORT = int(os.environ.get('PORT', '8443'))
-
-importing()
-
 #Working with up
-#up.start_webhook(listen="0.0.0.0",
-#                      port=PORT,
-#                      url_path=TOKEN)
-
-print(up.dispatcher.handlers)
-#up.bot.set_webhook("https://ipresearcher.herokuapp.com/" + TOKEN)
 up.start_polling()
 up.idle()
