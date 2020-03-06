@@ -19,7 +19,7 @@ import os
 
 #Importing modules from base that you need in your plugin
 from base import up, TOKEN #<= This import required
-from base.modules import ip
+from base.modules import ip_founder
 
 #Main File
 
