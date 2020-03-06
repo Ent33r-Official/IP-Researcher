@@ -29,7 +29,7 @@ from base import up, TOKEN #<= This import required
  #                     port=PORT,
  #                     url_path=TOKEN)
 
-#print(up.dispatcher.handlers)
+print(up.dispatcher.handlers)
 #up.bot.set_webhook("https://ipresearcher.herokuapp.com/" + TOKEN)
 up.start_polling()
 up.idle()
