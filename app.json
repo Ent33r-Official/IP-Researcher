@@ -1,7 +1,7 @@
 {
-  "name": "Node.js Sample",
+  "name": "IP-Researcher",
   "description": "A barebones Node.js app using Express",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "repository": "https://github.com/Ent33r-Official/IP-Researcher",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["node", "express", "static"]
 }
