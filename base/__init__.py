@@ -9,3 +9,8 @@ logging.basicConfig(
     level=logging.INFO)
 
 up = Updater(TOKEN, use_context=True)
+
+def importing():
+    for i in os.listdir('base\modules\\'):
+        __import__('base.modules.{}'.format(i))
+        print(i)
